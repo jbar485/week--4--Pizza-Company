@@ -17,7 +17,7 @@
     <h1>Il re della pizza</h1>
     <h3>Toppings</h3>
     <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="pepperoni">
+      <input class="form-check-input" type="checkbox" value="" id="pepperoni"checked>
       <label class="form-check-label" for="pepperoni">Pepperoni</label>
     </div>
     <div class="form-check">
@@ -44,6 +44,20 @@
       <input class="form-check-input" type="checkbox" value="" id="gold">
       <label class="form-check-label" for="gold">Gold Sprinkles</label>
     </div>
+    <h3>Size</h3>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="pizzaSize" id="single" value="1" checked>
+      <label class="form-check-label" for="single">Single</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="pizzaSize" id="family" value="2">
+      <label class="form-check-label" for="family">Family</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="pizzaSize" id="party" value="3">
+      <label class="form-check-label" for="party">Party</label>
+    </div>
+    <button type="submit" class="btn btn-dark" id="order">Order</button>
   </div>
 </body>
 </html>
