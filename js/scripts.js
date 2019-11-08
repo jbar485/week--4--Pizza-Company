@@ -72,7 +72,7 @@ $(document).ready(function(){
     var price = newPizza.finalPrice();
     console.log(newPizza);
     console.log(price);
-    $("#answer").text("Final Price $" + price + ".00");
+    $("#answer").text("Final Price: $" + price + ".00");
     $("#orderPage").hide();
     $("#finalCard").show();
   });

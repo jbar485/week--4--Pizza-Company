@@ -15,57 +15,72 @@
 <body>
   <div class="container">
     <h1>Il re della pizza</h1>
-
+    <!-- <img src="img/pizzaHome.gif" alt="hands taking pizza slices" class="center"> -->
     <div class="card border-danger mb-3" id="orderPage">
       <div class="card-body text-danger">
-        <h3>Toppings</h3>
-        <p>Each topping is $1.00 extra.</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name="addTopping" value="1" id="pepperoni"checked>
-          <label class="form-check-label" for="pepperoni">Pepperoni</label>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card border-info mb-3">
+              <div class="card-body text-info">
+                <h3>Toppings</h3>
+                <p>Each topping is $1.00 extra.</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="addTopping" value="1" id="pepperoni"checked>
+                  <label class="form-check-label" for="pepperoni">Pepperoni</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="addTopping" value="2" id="onions">
+                  <label class="form-check-label" for="onions">Onions</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="addTopping" value="3" id="bacon">
+                  <label class="form-check-label" for="bacon">Bacon</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="addTopping" value="4" id="blackOlives">
+                  <label class="form-check-label" for="blackOlives">Black Olives</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="addTopping" value="5" id="pineapple">
+                  <label class="form-check-label" for="pineapple">Pineapple</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="addTopping" value="6" id="sausage">
+                  <label class="form-check-label" for="sausage">Sausage</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="addTopping" value="7" id="gold">
+                  <label class="form-check-label" for="gold">100% Gold Sprinkles ($20.00)</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card border-info mb-3">
+              <div class="card-body text-info">
+                <h3>Size</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="pizzaSize" id="single" value="1" checked>
+                  <label class="form-check-label" for="single">10 inch ($5.00)</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="pizzaSize" id="family" value="2">
+                  <label class="form-check-label" for="family">14 inch ($7.00)</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="pizzaSize" id="party" value="3">
+                  <label class="form-check-label" for="party">16 inch ($9.00)</label>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name="addTopping" value="2" id="onions">
-          <label class="form-check-label" for="onions">Onions</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name="addTopping" value="3" id="bacon">
-          <label class="form-check-label" for="bacon">Bacon</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name="addTopping" value="4" id="blackOlives">
-          <label class="form-check-label" for="blackOlives">Black Olives</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name="addTopping" value="5" id="pineapple">
-          <label class="form-check-label" for="pineapple">Pineapple</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name="addTopping" value="6" id="sausage">
-          <label class="form-check-label" for="sausage">Sausage</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name="addTopping" value="7" id="gold">
-          <label class="form-check-label" for="gold">100% Gold Sprinkles</label>
-        </div>
-        <h3>Size</h3>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="pizzaSize" id="single" value="1" checked>
-          <label class="form-check-label" for="single">10 inch ($5.00)</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="pizzaSize" id="family" value="2">
-          <label class="form-check-label" for="family">14 inch ($7.00)</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="pizzaSize" id="party" value="3">
-          <label class="form-check-label" for="party">16 inch ($9.00)</label>
-        </div>
-        <button type="submit" class="btn btn-dark" id="order">Order</button>
       </div>
+      <button type="submit" class="btn btn-dark" id="order">ordina</button>
     </div>
     <div id="finalCard">
-      <h3>Your Pizza</h3>
+      <h3>la tua pizza</h3>
       <h5 id="pizzaDescription"></h5>
       <h5 id="answer"></h5>
       <button type="button" class="btn btn-dark" id="reset">ordina una nuova pizza</button>
