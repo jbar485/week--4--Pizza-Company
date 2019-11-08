@@ -16,21 +16,12 @@ _Its a website where users can shop my inventory of the pizza that I have to off
 * _Double click on index.html to open the file in a web browser_
 
 ## Behavior-Driven Development
-* _Spec: _
-  * _Input: _
-  * _Output: _
-* _Spec: _
-  * _Input: _
-  * _Output: _
-* _Spec: _
-  * _Input: _
-  * _Output: _
-* _Spec: _
-  * _Input: _
-  * _Output: _
-* _Spec:If _
-  * _Input: _
-  * _Output: _
+* _Spec: For whatever topping they select it adds a dollar_
+  * _Input: "Bacon"_
+  * _Output: total + 1_
+* _Spec: for whatever size they select it adds that price to the pizza_
+  * _Input: "10 inch"_
+  * _Output: $5.00_
 
 
 ## Known Bugs
