@@ -5,8 +5,33 @@ function Pizza(size, toppings) {
 }
 
 Pizza.prototype.finalPrice = function() {
+  var pizzaTop = [];
   for (i = 0; i < this.toppings.length; i++) {
-    this.price += 1;
+    if (this.toppings[i] === 7) {
+      this.price += 20
+      $("#pizzaDescription").text("100% Gold Sprinkles");
+    }else if (this.toppings[i] === 6) {
+      this.price += 1;
+      $("#pizzaDescription").text("Sausage");
+    }else if (this.toppings[i] === 5) {
+      this.price += 1;
+      $("#pizzaDescription").text("Pineapple");
+    }else if (this.toppings[i] === 4) {
+      this.price += 1;
+      $("#pizzaDescription").text("Black Olives");
+    }else if (this.toppings[i] === 3) {
+      this.price += 1;
+      $("#pizzaDescription").text("Bacon");
+    }else if (this.toppings[i] === 2) {
+      this.price += 1;
+      $("#pizzaDescription").text("Onions");
+    }else if (this.toppings[i] === 1) {
+      this.price += 1;
+      $("#pizzaDescription").text("Pepperoni");
+    }else {
+      $("#pizzaDescription").text("Plain Cheese pizza");
+    }
+
   }
   console.log(this.price);
   if (this.size === 1) {
