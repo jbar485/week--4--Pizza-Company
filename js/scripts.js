@@ -5,9 +5,10 @@ function Pizza(size, toppings) {
 }
 
 Pizza.prototype.finalPrice = function() {
-  this.toppings.forEach(function(topping){
+  for (i = 0; i < this.toppings.length; i++) {
     this.price += 1;
-  });
+  }
+  console.log(this.price);
   if (this.size === 1) {
     this.price += 5;
   }else if (this.size === 2) {
