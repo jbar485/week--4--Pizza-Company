@@ -9,31 +9,37 @@ Pizza.prototype.finalPrice = function() {
   for (i = 0; i < this.toppings.length; i++) {
     if (this.toppings[i] === 7) {
       this.price += 20
-      $("#pizzaDescription").text("100% Gold Sprinkles");
+      var gold = " 100% Gold Sprinkles";
+      pizzaTop.push(gold);
     }else if (this.toppings[i] === 6) {
       this.price += 1;
-      $("#pizzaDescription").text("Sausage");
+      var sausage = " Sausage";
+      pizzaTop.push(sausage);
     }else if (this.toppings[i] === 5) {
       this.price += 1;
-      $("#pizzaDescription").text("Pineapple");
+      var pineapple = " Pineapple";
+      pizzaTop.push(pineapple);
     }else if (this.toppings[i] === 4) {
       this.price += 1;
-      $("#pizzaDescription").text("Black Olives");
+      var olives = " Black Olives";
+      pizzaTop.push(olives);
     }else if (this.toppings[i] === 3) {
       this.price += 1;
-      $("#pizzaDescription").text("Bacon");
+      var bacon = " Bacon";
+      pizzaTop.push(bacon);
     }else if (this.toppings[i] === 2) {
       this.price += 1;
-      $("#pizzaDescription").text("Onions");
+      var onions = " Onions";
+      pizzaTop.push(onions);
     }else if (this.toppings[i] === 1) {
       this.price += 1;
-      $("#pizzaDescription").text("Pepperoni");
+      var pepperoni = " Pepperoni";
+      pizzaTop.push(pepperoni);
     }else {
-      $("#pizzaDescription").text("Plain Cheese pizza");
+      var cheese = " Cheese Pizza";
+      pizzaTop.push(cheese);
     }
-
   }
-  console.log(this.price);
   if (this.size === 1) {
     this.price += 5;
   }else if (this.size === 2) {
@@ -43,6 +49,7 @@ Pizza.prototype.finalPrice = function() {
   }else {
     alert("Sorry, you need to select a size")
   }
+  $("#pizzaDescription").text(pizzaTop);
   return this.price;
 }
 
