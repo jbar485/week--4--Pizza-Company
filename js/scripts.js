@@ -28,7 +28,8 @@ $(document).ready(function(){
     var toppingArray = [];
     var finalTopping = $("input:checkbox[name=addTopping]:checked").each(function(){
       var finalTopping1 = $(this).val();
-      toppingArray.push(finalTopping1);
+      var number = parseInt(finalTopping1);
+      toppingArray.push(number);
     });
     console.log(toppingArray);
 
@@ -36,10 +37,9 @@ $(document).ready(function(){
 
     var newPizza = new Pizza(finalSize, toppingArray);
     var price = newPizza.finalPrice();
-
+    console.log(newPizza);
+    console.log(price);
     $("#answer").text("Final Price $" + price + ".00");
-
-    console.log(toppingArray);
   });
 
 });
