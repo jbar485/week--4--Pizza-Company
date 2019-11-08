@@ -16,7 +16,7 @@
   <div class="container">
     <h1>Il re della pizza</h1>
 
-    <div class="card border-danger mb-3">
+    <div class="card border-danger mb-3" id="orderPage">
       <div class="card-body text-danger">
         <h3>Toppings</h3>
         <p>Each topping is $1.00 extra.</p>
@@ -64,10 +64,11 @@
         <button type="submit" class="btn btn-dark" id="order">Order</button>
       </div>
     </div>
-    <div class="card">
+    <div id="finalCard">
       <h3>Your Pizza</h3>
-      <p id="pizzaDescription"></p>
-      <p id="answer"></p>
+      <h5 id="pizzaDescription"></h5>
+      <h5 id="answer"></h5>
+      <button type="button" class="btn btn-dark" id="reset">ordina una nuova pizza</button>
     </div>
   </div>
 </body>

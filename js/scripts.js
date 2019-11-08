@@ -73,6 +73,11 @@ $(document).ready(function(){
     console.log(newPizza);
     console.log(price);
     $("#answer").text("Final Price $" + price + ".00");
+    $("#orderPage").hide();
+    $("#finalCard").show();
   });
+  $("button#reset").click(function(event){
+      location.reload();
+    });
 
 });
