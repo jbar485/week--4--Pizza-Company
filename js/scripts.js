@@ -20,7 +20,24 @@ Pizza.prototype.finalPrice = function() {
   return this.price;
 }
 
+
 $(document).ready(function(){
-  $
+  $("#order").click(function(event){
+    console.log("hello");
+    event.preventDefault();
+    var finalTopping = $("input:checkbox[name=addTopping]:checked").val();
+    var toppingArray = [];
+    var finalSize = $("#pizzaSize").val();
+    finalTopping.forEach(function(topping){
+      toppingArray.push(topping.val());
+    });
+
+    var newPizza = new Pizza(finalSize, toppingArray);
+    var price = newPizza.finalPrice();
+
+    $("#answer").text("Final Price" + price + ".");
+
+    console.log(toppingArray);
+  });
 
 });
