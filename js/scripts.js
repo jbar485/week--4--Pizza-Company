@@ -25,17 +25,21 @@ $(document).ready(function(){
   $("#order").click(function(event){
     console.log("hello");
     event.preventDefault();
-    var finalTopping = $("input:checkbox[name=addTopping]:checked").val();
-    var toppingArray = [];
-    var finalSize = $("#pizzaSize").val();
-    finalTopping.forEach(function(topping){
-      toppingArray.push(topping.val());
+    var finalTopping = $("input:checkbox[name=addTopping]:checked").each(function(){
+      var finalTopping1 = $(this).val();
+      console.log(finalTopping1);
     });
+    var toppingArray = [];
+    var finalSize = parseInt($("input:radio[name=pizzaSize]:checked").val());
+    console.log(finalSize, finalTopping);
+    // finalTopping.forEach(function(topping){
+    //   toppingArray.push(topping.val());
+    // });
 
-    var newPizza = new Pizza(finalSize, toppingArray);
+    var newPizza = new Pizza(finalSize, finalTopping);
     var price = newPizza.finalPrice();
 
-    $("#answer").text("Final Price" + price + ".");
+    $("#answer").text("Final Price $" + price + ".00");
 
     console.log(toppingArray);
   });

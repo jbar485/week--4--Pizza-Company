@@ -21,40 +21,47 @@
         <h3>Toppings</h3>
         <p>Each topping is $1.00 extra.</p>
         <div class="form-check">
-          <input class="form-check-input" name="addTopping" type="checkbox" value="" id="pepperoni"checked>
+          <input class="form-check-input" type="checkbox" name="addTopping" value="1" id="pepperoni"checked>
           <label class="form-check-label" for="pepperoni">Pepperoni</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" name="addTopping" type="checkbox" value="" id="onions">
+          <input class="form-check-input" type="checkbox" name="addTopping" value="1" id="onions">
           <label class="form-check-label" for="onions">Onions</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" name="addTopping" type="checkbox" value="" id="bacon">
+          <input class="form-check-input" type="checkbox" name="addTopping" value="1" id="bacon">
           <label class="form-check-label" for="bacon">Bacon</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" name="addTopping" type="checkbox" value="" id="blackOlives">
+          <input class="form-check-input" type="checkbox" name="addTopping" value="1" id="blackOlives">
           <label class="form-check-label" for="blackOlives">Black Olives</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" name="addTopping" type="checkbox" value="" id="pineapple">
+          <input class="form-check-input" type="checkbox" name="addTopping" value="1" id="pineapple">
           <label class="form-check-label" for="pineapple">Pineapple</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" name="addTopping" type="checkbox" value="" id="sausage">
+          <input class="form-check-input" type="checkbox" name="addTopping" value="1" id="sausage">
           <label class="form-check-label" for="sausage">Sausage</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" name="addTopping" type="checkbox" value="" id="gold">
+          <input class="form-check-input" type="checkbox" name="addTopping" value="1" id="gold">
           <label class="form-check-label" for="gold">Gold Sprinkles</label>
         </div>
         <h3>Size</h3>
-        <select class="form-control" id="pizzaSize">
-          <option value="1">10 inch ($5.00)</option>
-          <option value="2">14 inch ($7.00)</option>
-          <option value="3">16 inch ($9.00)</option>
-        </select>
-        <button type="button" class="btn btn-dark" id="order">Order</button>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="pizzaSize" id="single" value="1" checked>
+          <label class="form-check-label" for="single">10 inch ($5.00)</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="pizzaSize" id="family" value="2">
+          <label class="form-check-label" for="family">14 inch ($7.00)</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="pizzaSize" id="party" value="3">
+          <label class="form-check-label" for="party">16 inch ($9.00)</label>
+        </div>
+        <button type="submit" class="btn btn-dark" id="order">Order</button>
       </div>
     </div>
     <div class="card">
